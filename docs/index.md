@@ -2,7 +2,7 @@
 
 ## Home of T-Level Digital Resources
 
-Over time I have been creating and collating resources of interest for my T-Level Digital Support Services students and posting them as a bunch of markdown files on [Codeberg](https://codeberg.org/rdmillen/computingeducation), however I've now outgrown this platform and navigation of a stack of markdown files can be a bit of a pain.  As of March 2025, these resources now reside here on The DSS Wiki! In November 2026 the DSS Wiki became T-Level Digital, so that the Route Core material shared by the Digital T-Levels sits in one place alongside the resources for each occupational specialism.
+Over time I have been creating and collating resources of interest for my T-Level Digital Support Services students and posting them as a bunch of markdown files on [Codeberg](https://codeberg.org/rdmillen/computingeducation), however I've now outgrown this platform and navigation of a stack of markdown files can be a bit of a pain.  As of March 2025, these resources then resided on The DSS Wiki. In November 2026 the DSS Wiki became T-Level Digital, so that the Route Core material shared by the Digital T-Levels sits in one place alongside the resources for each occupational specialism.
 
 ## Quick Links
 
