@@ -1,65 +1,118 @@
 [project]
-site_url = "https://tlevel-digital.github.io"
-site_name = "T-Level Digital Resources"
-# site_description = "Your project description"
-# site_author = "Your name"
+site_name = "T-Level Digital"
+site_url = "https://tlevel-digital.github.io/"
+site_description = "Open teaching resources for T-Level Digital students and staff"
+site_author = "Ross Millen"
+copyright = "Content licensed under CC BY-NC-SA 4.0"
+repo_url = "https://github.com/tlevel-digital/tlevel-digital.github.io"
+repo_name = "tlevel-digital.github.io"
+edit_uri = "edit/main/docs/"
 
-# copyright = "Copyright &copy; 2026 Your name"
-
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
-# edit_uri = "edit/main/docs/"
-
-nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+extra_javascript = [
+  "assets/javascripts/mathjax.js",
+  "https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js",
 ]
 
-# extra_css = ["stylesheets/extra.css"]
-# extra_javascript = ["javascripts/extra.js"]
+nav = [
+  { "Home" = "index.md" },
+  { "About" = [
+    { "Digital T-Levels" = "about/digital-t-levels.md" },
+    { "Qualification Structure" = "about/qualification-structure.md" },
+    { "Employers" = "about/employers.md" },
+    { "Contribute" = "contribute.md" },
+  ] },
+  { "Route Core" = [
+    "route-core/index.md",
+    { "Problem Solving" = [
+      "route-core/problem-solving/index.md",
+      { "Supporting Frameworks" = [
+        { "Agile vs Waterfall Methodologies" = "route-core/problem-solving/supporting-frameworks/agile-vs-waterfall-methodologies.md" },
+        { "IEEE and ISO Problem Resolution Guidelines" = "route-core/problem-solving/supporting-frameworks/ieee-and-iso-problem-resolution-guidelines.md" },
+        { "Kolb's Experiential Learning Cycle" = "route-core/problem-solving/supporting-frameworks/kolbs-experiential-learning-cycle.md" },
+      ] },
+    ] },
+    { "Data" = [
+      "route-core/data/index.md",
+      { "The Six Vs of Big Data" = "route-core/data/the-six-vs-of-big-data.md" },
+      { "File Format vs File Size" = "route-core/data/file-format-vs-file-size.md" },
+      { "LUKS and Access Control Practical" = "route-core/data/luks-and-access-control-practical.md" },
+      { "SQLite Database on Debian Server" = "route-core/data/sqlite-database-on-debian-server.md" },
+      { "Custom Homepage Dashboard" = "route-core/data/custom-homepage-dashboard.md" },
+      { "Telemetry and Monitoring" = "route-core/data/telemetry-and-monitoring.md" },
+    ] },
+    { "Digital Environments" = [
+      "route-core/digital-environments/index.md",
+      { "Virtualisation" = "route-core/digital-environments/virtualisation.md" },
+      { "Docker and Containerised Applications" = "route-core/digital-environments/docker-and-containerised-applications.md" },
+      { "MacOS in a Box" = "route-core/digital-environments/macos-in-a-box.md" },
+      { "Monitoring Software" = "route-core/digital-environments/monitoring-software.md" },
+      { "Networks" = [
+        { "Cisco Packet Tracer" = "route-core/digital-environments/networks/cisco-packet-tracer.md" },
+        { "IP Addressing" = "route-core/digital-environments/networks/ip-addressing.md" },
+        { "Subnets and Subnet Masks" = "route-core/digital-environments/networks/subnets-and-subnet-masks.md" },
+        { "Network Address Translation (NAT)" = "route-core/digital-environments/networks/network-address-translation-nat.md" },
+        { "Static Routing" = "route-core/digital-environments/networks/static-routing.md" },
+        { "Virtual LANs" = "route-core/digital-environments/networks/virtual-lans.md" },
+        { "Packet Tracer - Small Business Network" = "route-core/digital-environments/networks/packet-tracer-small-business-network.md" },
+      ] },
+    ] },
+    { "Security" = [
+      "route-core/security/index.md",
+      { "Ethical Hacking Tools" = "route-core/security/ethical-hacking-tools.md" },
+      { "EternalBlue" = "route-core/security/eternalblue.md" },
+    ] },
+  ] },
+  { "Occupational Specialisms" = [
+    "occupational-specialisms/index.md",
+    { "Digital Support" = [
+      { "Assignment 1" = [
+        { "Windows Server 2022 Installation" = "occupational-specialisms/digital-support/assignment-1/windows-server/windows-server-2022-installation.md" },
+        { "Changing Your Server's Hostname" = "occupational-specialisms/digital-support/assignment-1/windows-server/changing-your-servers-hostname.md" },
+      ] },
+      { "Assignment 2" = [
+        "occupational-specialisms/digital-support/assignment-2/index.md",
+      ] },
+      { "Assignment 3" = [
+        "occupational-specialisms/digital-support/assignment-3/index.md",
+        { "Custom Images with WDS" = "occupational-specialisms/digital-support/assignment-3/custom-images-with-wds.md" },
+      ] },
+    ] },
+  ] },
+  { "Misc" = [
+    { "Using Proxmox Virtualisation Servers" = "misc/using-proxmox-virtualisation-servers.md" },
+    { "Installing Debian Linux for Server Use" = "misc/installing-debian-linux-for-server-use.md" },
+    { "Installing Arch (btw)" = "misc/installing-arch-btw.md" },
+    { "Linux Package Management" = "misc/linux-package-management.md" },
+    { "SystemD Service Management" = "misc/systemd-service-management.md" },
+    { "The GNU Nano Text Editor" = "misc/the-gnu-nano-text-editor.md" },
+    { "Inspecting System Hardware" = "misc/inspecting-system-hardware.md" },
+    { "Setting up Network Attached Storage (NAS)" = "misc/setting-up-network-attached-storage-nas.md" },
+  ] },
+  { "Resources" = "resources.md" },
+]
 
 [project.theme]
-# variant = "classic"
-# custom_dir = "overrides"
-# favicon = "images/favicon.png"
 language = "en"
+favicon = "assets/favicon.png"
 features = [
-  "announce.dismiss",
-  # "content.action.edit",
-  # "content.action.view",
-  "content.code.annotate",
+  "content.action.edit",
   "content.code.copy",
   "content.code.select",
-  "content.footnote.tooltips",
-  "content.tabs.link",
   "content.tooltips",
-  # "header.autohide",
-  # "navigation.expand",
   "navigation.footer",
   "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
-  # "navigation.instant.progress",
   "navigation.path",
-  # "navigation.prune",
   "navigation.sections",
-  # "navigation.tabs",
-  # "navigation.tabs.sticky",
+  "navigation.tabs",
   "navigation.top",
   "navigation.tracking",
   "search.highlight",
-  # "toc.follow",
-  # "toc.integrate",
 ]
 
-# logo = "assets/logo.png"
-
-# [project.theme.icon]
-# logo = "lucide/smile"
-
-# [project.theme.font]
-# text = "Inter"
-# code = "Jetbrains Mono"
+[project.theme.icon]
+logo = "lucide/terminal"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
@@ -78,14 +131,6 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/github"
-# link = "https://github.com/user/repo"
-
-# [[project.extra.social]]
-# icon = "fontawesome/brands/mastodon"
-# link = "https://fosstodon.org/@user"
-
 [project.markdown_extensions]
 abbr = {}
 admonition = {}
@@ -93,6 +138,8 @@ attr_list = {}
 def_list = {}
 footnotes = {}
 md_in_html = {}
+sane_lists = {}
+tables = {}
 toc.permalink = true
 pymdownx.arithmatex.generic = true
 pymdownx.betterem = {}
@@ -108,7 +155,6 @@ pymdownx.keys = {}
 pymdownx.magiclink = {}
 pymdownx.mark = {}
 pymdownx.smartsymbols = {}
-# pymdownx.snippets.base_path = "includes"
 pymdownx.superfences.custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
 ]
