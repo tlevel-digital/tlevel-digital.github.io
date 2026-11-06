@@ -87,6 +87,14 @@ interface GigabitEthernet1/0/24
 exit
 ```
 
+### Write changes to NVRAM
+
+Once configuration is complete, write the current config to memory:
+
+```shell
+write-memory
+```
+
 ---
 
 ## Step 2: Configure the Cisco 1941 Router
@@ -133,6 +141,14 @@ ip dhcp pool VLAN20
  network 192.168.20.0 255.255.255.0  
  default-router 192.168.20.1  
 exit
+```
+
+### Write changes to NVRAM
+
+Once configuration is complete, write the current config to memory:
+
+```shell
+write-memory
 ```
 
 ---
