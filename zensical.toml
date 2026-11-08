@@ -36,7 +36,10 @@ nav = [
       { "The Six Vs of Big Data" = "route-core/data/the-six-vs-of-big-data.md" },
       { "File Format vs File Size" = "route-core/data/file-format-vs-file-size.md" },
       { "LUKS and Access Control Practical" = "route-core/data/luks-and-access-control-practical.md" },
-      { "SQLite Database on Debian Server" = "route-core/data/sqlite-database-on-debian-server.md" },
+      { "Structured Query Language (SQL) = [
+        { "Introduction to SQL" = "route-core/data/sql/introtosql.md"},
+        { "SQLite Database on Debian Server" = "route-core/data/sql/sqlite-database-on-debian-server.md" },
+      ]},
       { "Custom Homepage Dashboard" = "route-core/data/custom-homepage-dashboard.md" },
       { "Telemetry and Monitoring" = "route-core/data/telemetry-and-monitoring.md" },
     ] },
